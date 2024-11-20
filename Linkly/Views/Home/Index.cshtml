@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to <b>Linkly</b></h1>
+    <p>Shorten your links in seconds!</p>
+
+    <form id="urlForm" asp-action="Generate" asp-controller="Url" method="post" class="mt-4">
+        <div class="form-group">
+            <h3><label for="longUrl">Enter the URL</label></h3>
+            <input type="url" class="form-control" id="longUrl" name="longUrl" placeholder="Enter your long URL here" required />
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Shorten</button>
+    </form>
+</div>
+
